@@ -2,20 +2,17 @@ var score = 0;
 var userAnswer = "answerA";
 var difficulty = 9
 var lowerLimit = 1
-
+var stage;
 
 window.onload = function(){
 
-
-  var stage = new swiffy.Stage(document.getElementById('swiffycontainer'), swiffyobject, {});
+  stage = new swiffy.Stage(document.getElementById('swiffycontainer'), swiffyobject, {});
   stage.start();
-
-  stage.pauseanimation();
 
   document.getElementById("multiply").addEventListener("click", function(){
     document.getElementById("multiply").style.visibility = "hidden";
     document.getElementById("add").style.visibility = "hidden";
-
+    document.getElementById("instructions").style.display = "none";
     document.getElementById("In").style.visibility = "hidden";
     document.getElementById("Five").style.visibility = "hidden";
     document.getElementById("logo").style.display = "block";
@@ -24,10 +21,10 @@ window.onload = function(){
     quizMultiplication();
   });
 
-  document.getElementById("add").addEventListener("click", function(){
+    document.getElementById("add").addEventListener("click", function(){
     document.getElementById("add").style.visibility = "hidden";
     document.getElementById("multiply").style.visibility = "hidden";
-
+    document.getElementById("instructions").style.display = "none";
     document.getElementById("In").style.visibility = "hidden";
     document.getElementById("Five").style.visibility = "hidden";
     document.getElementById("logo").style.display = "block";
@@ -183,6 +180,7 @@ function clearAnswer(){
 }
 
 function chooseCorrectAnswer(){
+  
   score++;
   if(score % 5 === 0){
     lowerLimit = lowerLimit + difficulty - 1
@@ -200,6 +198,7 @@ function chooseCorrectAnswer(){
 function chooseAnswer(){
   userAnswer = this.id
   clearAnswer();
+  document.getElementById("question").style.visibility = "hidden";
 }
 
 function reloadPage(){

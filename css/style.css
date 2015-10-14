@@ -6,10 +6,23 @@ html, body {
   font-color: white;
 }
 
+#score {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  font-size: 40px;
+  margin-right: 200px;
+  margin-top: -65px;
+  color: white;
+  font-family: helvetica;
+  float: right;
+}
+
 canvas{
   margin-bottom: -100px;
 
 }
+
 
 #swiffycontainer {
   margin-left: 30.1%;
@@ -155,15 +168,6 @@ h2 {
   font-family: helvetica;
 }
 
-#score {
-  text-align: center;
-  margin: auto;
-  width: 200px;
-  margin-top: -50px;
-  font-size: 40px;
-  color: white;
-  font-family: helvetica;
-}
 
 #answers {
  border-color: white;
@@ -174,4 +178,5 @@ h2 {
  top: 100px;
  margin-top: -375px;
  margin-left: 75%;
+ list-style-type: none;
 }
