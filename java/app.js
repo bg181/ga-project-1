@@ -6,8 +6,8 @@ var stage;
 
 window.onload = function(){
 
-  stage = new swiffy.Stage(document.getElementById('swiffycontainer'), swiffyobject, {});
-  stage.start();
+  // stage = new swiffy.Stage(document.getElementById('swiffycontainer'), swiffyobject, {});
+  // stage.start();
 
   document.getElementById("multiply").addEventListener("click", function(){
     document.getElementById("multiply").style.visibility = "hidden";
