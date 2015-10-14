@@ -43,9 +43,8 @@ function play(){
   var randomAnswerCombo1 = (Math.floor(Math.random() * difficulty)+lowerLimit);
   var randomAnswerCombo2 = (Math.floor(Math.random() * difficulty)+lowerLimit);
   var randomAnswerCombo3 = (Math.floor(Math.random() * difficulty)+lowerLimit);
-  var randomNumber1 = (Math.floor(Math.random() * difficulty)+lowerLimit);
-  var randomOperator = operators[0];
-  var randomNumber2 = (Math.floor(Math.random() * difficulty)+lowerLimit);
+  var randomNumber1      = (Math.floor(Math.random() * difficulty)+lowerLimit);
+  var randomNumber2      = (Math.floor(Math.random() * difficulty)+lowerLimit);
 
   $("#question").html(randomNumber1+ " " +randomOperator+ " " +randomNumber2);
   
